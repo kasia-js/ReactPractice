@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import FunctionalComponent from './FunctionalComponent';
 import reportWebVitals from './reportWebVitals';
+import LikeButton from './ClassComponent'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FunctionalComponent />
+    <LikeButton />
   </React.StrictMode>,
   document.getElementById('root')
 );

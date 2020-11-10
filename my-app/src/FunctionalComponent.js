@@ -1,8 +1,7 @@
-import './App.css';
 import cx from "classnames";
 import React, { useState } from 'react';
 
-function App() {
+function FunctionalComponent() {
   const [count, setCount] = useState(100);
   const [clicked, setClicked] =  useState(false);
 
@@ -20,7 +19,7 @@ function App() {
   return (
     <>
     <div>
-      <button className = {'liked-button ' + (clicked ? 'liked' : '')}  onClick={getCount}> Like | <span className="likes-counter">{count}</span> </button>
+      <button className = {'like-button ' + (clicked ? 'liked' : '')}  onClick={getCount}> Like | <span className="likes-counter">{count}</span> </button>
     </div>
     <style>{`
       .like-button {
@@ -37,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default FunctionalComponent;
